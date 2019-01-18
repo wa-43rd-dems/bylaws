@@ -1,0 +1,518 @@
+\documentclass{article}
+\usepackage{alphalph}
+\usepackage[inline]{enumitem}
+\usepackage[super]{nth}
+\usepackage{titlesec}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection\enspace\textendash\enspace}{0em}{}
+\titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\makeatletter
+\def\enumalphalphcnt#1{\expandafter\@enumalphalphcnt\csname c@#1\endcsname}
+\def\@enumalphalphcnt#1{\alphalph{#1}}
+\makeatother
+\AddEnumerateCounter{\enumalphalphcnt}{\@enumalphalphcnt}{aa}
+
+\newlist{inlinealphalist}{enumerate*}{1}
+\setlist[inlinealphalist]{label=(\alph*)}
+\newlist{alphalist}{enumerate}{1}
+\setlist[alphalist]{nosep, label=(\enumalphalphcnt*)}
+
+\newcommand{\fortythird}{\nth{43}}
+\newcommand{\district}{\fortythird{} District}
+\newcommand{\thedistrict}{the \district{}}
+\newcommand{\theLD}{the \fortythird{} Legislative District}
+
+\begin{document}
+\title{Bylaws of \thedistrict{} Democratic Organization}
+\date{(Last Amended January 16, 2018)}
+\maketitle
+
+\renewcommand{\abstractname}{Preamble}
+\begin{abstract}
+The purpose of \thedistrict{} Democratic Organization is to promote the Democratic Party and to increase participation by educating individuals about the principles, goals and candidates of the Democratic Party.
+\end{abstract}
+
+\section{Name}
+\subsection{}
+This organization shall be known as \thedistrict{} Democratic Organization.
+
+\section{Membership}
+\subsection{}
+“Member” means and includes any individual who
+\begin{inlinealphalist}
+    \item is a registered voter or, if under voting age, is eligible to become a registered voter within two years;
+    \item resides within \theLD{};
+    \item themself to be a Democrat; and
+    \item has paid applicable dues or is a PCO.
+\end{inlinealphalist}
+
+\subsection{}
+“Non-Voting Member” means any individual who
+\begin{inlinealphalist}
+    \item declares themself to be a Democrat and
+    \item has paid applicable dues but is either not a registered voter or does not reside within \theLD{}. Non-voting Members may participate in Meetings and other \district{} events but do not have the right to vote on any matter.
+\end{inlinealphalist}
+
+\subsection{}
+The effective date when an individual becomes a Member is the earliest of:
+\begin{alphalist}
+    \item The date when his or her term of office as an Elected PCO begins;
+    \item The date when the \fortythird{} LD Democrats recommend his or her appointment as an Acting PCO or
+Appointed PCO;
+    \item The date when applicable dues are paid, if the individual was a Voting Member during the previous
+calendar year; or
+    \item Ten (10) days after paying applicable dues.
+\end{alphalist}
+
+\subsection{}
+The effective date when an individual ceases to be a Member is the later of:
+\begin{alphalist}
+    \item The date when their term of office ends; or
+    \item January 31st of the year following receipt of dues payment.
+\end{alphalist}
+
+\subsection{}
+Dues are payable annually. The amount of the annual dues shall be established by and may be amended by the Membership using the procedures applicable to the adoption and amendment of the budget in §14.2.
+
+\subsection{}
+Members shall not use any title of office or identify themselves as representing \thedistrict{} unless authorized by the Membership or the Executive Board.
+
+\section{Precinct Committee Officers}
+\subsection{}
+“Elected PCO” means an individual who is elected to the office of Precinct Committee Officer pursuant to RCW 29A.80.041.
+
+\subsection{}
+“Appointed PCO” means an individual who is appointed to the office of Precinct Committee Officer pursuant to RCW 29A.28.071. Except as otherwise provided in these bylaws, Appointed PCOs have the same rights and responsibilities as Elected PCOs.
+
+\subsection{}
+“Acting PCO” means an individual who is appointed by the County Chair to serve as PCO in a precinct
+\begin{inlinealphalist}
+    \item that does not have an Elected PCO or an Appointed PCO, and
+    \item in which the individual does not reside. An individual ceases to be an Acting PCO upon the election of an Elected PCO or the appointment of an Appointed PCO for that precinct. Except as otherwise provided in these bylaws, an Acting PCO has the same rights and responsibilities as an Elected PCO.
+\end{inlinealphalist}
+
+\subsection{}
+The County Chair shall appoint Appointed PCOs and Acting PCOs as provided by state law and the bylaws of the KCDCC.
+
+\subsection{}
+The Chair shall recommend individuals to the County Chair for appointment as Appointed PCO or Acting PCO for vacant precincts. The Chair shall not recommend any individual for appointment unless that individual has been approved by a majority of the PCOs present and voting at a Meeting, not counting abstentions. The name of any such individuals must be published at least ten (10) days before the Meeting at which approval is sought. The Chair shall submit approved recommendations to the County Chair within fifteen (15) days of approval.
+
+\subsection{}
+No PCOs may be recommended to the County Chair or appointed between the certification of the general election in even numbered years and the Reorganization Meeting following the general election.
+
+\subsection{}
+A precinct is deemed vacant if the Elected PCO or Appointed PCO
+\begin{inlinealphalist}
+    \item dies;
+    \item resigns from office;
+    \item ceases to be a registered voter; or
+    \item ceases to reside in the precinct from which the PCO was elected or appointed. The Chair shall notify the membership of any vacancies that occur by reason of the death, resignation, or disqualification of an Elected PCO or Appointed PCO.
+\end{inlinealphalist}
+
+\section{Meetings}
+\subsection{}
+“Regular Meeting” means a regularly scheduled meeting of \thedistrict{}. The time and date for a Regular Meeting may be altered by the Membership or the Executive Board. Notice of any change in the time or date of a Regular Meeting must be published at least thirty (30) days before the new meeting date.
+
+\subsection{}
+“Special Meeting” means a Meeting other than a Regular Meeting or a Reorganization Meeting. A Special Meeting may be called by one-fourth (1/4) of the members, one-third (1/3) of the PCOs, or a majority of the Executive Board. Notice of a Special Meeting must be published at least thirty (30) days before the meeting date.
+
+\subsection{}
+“Reorganization Meeting” means a meeting called by the County Chair for the purpose of reorganizing \thedistrict{}
+\begin{inlinealphalist}
+    \item in January of odd-numbered years, or
+    \item in a year in which the boundaries of the Legislative District are changed.
+\end{inlinealphalist}
+
+\subsection{}
+Twenty-five (25) Members shall constitute a quorum. With respect to any action requiring PCO approval, fifteen (15) PCOs shall constitute a quorum.
+
+\section{Voting}
+\subsection{}
+Only PCOs may vote on the approval of PCO recommendations.
+
+\subsection{}
+Only Elected PCOs and Appointed PCOs may vote on the election of Chair, First Vice Chair, State Committeewoman, State Committeeman, Female KCDCC Delegate, Male KCDCC Delegate, Female KCDCC Alternate Delegate, and Male KCDCC Alternate Delegate.
+
+\subsection{}
+Executive Board members, except for the Young Democrats Representative, Chair Emeritus and WSDCC Executive Board member(s), shall be elected by a majority of those present and voting, not counting abstentions. If no individual receives a majority in a round of voting, the individual receiving the fewest votes shall be eliminated from consideration in the next round of voting. On case of a tie for fewest votes, there shall be a run-off among those with the lowest vote total, eliminating the candidate receiving the lowest total I the runoff.  Voting continues until an individual is elected. In the case of contested elections, voting is conducted by signed ballot.
+
+\subsection{}
+The Young Democrats Representative shall be appointed by the Chair subject to the approval of a majority of Members present and voting at a Meeting, not counting abstentions.
+\section{Officers and Executive Board}
+\subsection{}
+The Executive Board of \thedistrict{} shall consist of the Chair, First Vice Chair, Treasurer, Vice Chair for Elections, Vice Chair for PCO Recruitment, Vice Chair for Membership, Vice Chair for Communications, Vice Chair for Technology, Vice Chair for Events, Vice Chair for Programs and Meetings, Secretary, State Committeewoman, State Committeeman, Female KCDCC Delegate, Male KCDCC Delegate, Female KCDCC Alternate, Male KCDCC Alternate, and Young Democrats Representative.
+
+\subsection{}
+The Officers of \thedistrict{} Democrats shall be the Chair Emeritus and Treasurer Emeritus (Emeritus position are advisory and do not have an Executive Board vote), any member of \thedistrict{} Democrats who serves as an officer on the Executive Board of the Washington State Democratic Central Committee, and other appointed officers as the Chair deems necessary. All Officers appointed by the Chair shall be subject to approval by majority vote of present members at a General Membership meeting. Positions not specified in the bylaws expire at the next reorganization meeting.
+
+\subsection{}
+Each Executive Board Member and Officer shall serve until the earliest of
+\begin{inlinealphalist}
+    \item the next Reorganization Meeting,
+    \item the Officer’s resignation, or
+    \item the Officer’s removal from office.
+\end{inlinealphalist}
+
+\subsection{}
+Executive Board members shall be elected at the Reorganization Meeting or as necessary to fill a vacancy, except for the Young Democrats Representative, who shall be appointed by the Chair.
+
+\subsection{}
+A quorum of the Executive Board shall be eight (8) members.
+
+\subsection{}
+The Executive Board shall establish a regular monthly meeting for the purpose of planning and directing the policies and activities of the 43rd LD Democrats. Special meetings of the Executive Board may be called by a majority of its members.
+
+\section{Duties of Officers}
+\subsection{}
+The Chair shall
+\begin{inlinealphalist}
+    \item act as the chief executive officer of \thedistrict{};
+    \item preside over meetings of the membership and of the Executive Board;
+    \item serve as a member of the KCDCC executive board;
+    \item make any appointments or recommendations authorized by these bylaws;
+    \item appoint members to perform duties as the Chair deems necessary;
+    \item report to the Executive Board and the membership regarding activities of the 43rd LD Democrats;
+    \item implement the policies of \thedistrict{} and the Executive Board;
+    \item designate another member of the Executive Board to perform the Chair’s duties, if neither the Chair nor the First Vice Chair is available;
+    \item provide oversight and review of the district treasury and related financial documents, and
+    \item perform such other duties as the Chair deems appropriate.
+\end{inlinealphalist}
+
+\subsection{}
+The First Vice Chair shall
+\begin{inlinealphalist}
+    \item in the absence of the Chair, preside over meetings of the membership and of the Executive Board;
+    \item in the absence of the Chair, represent the 43rd LD Democrats at party organization, for example; the KCDCC executive board;
+    \item perform such other duties as delegated by the Chair.
+\end{inlinealphalist}
+
+\subsection{}
+The Treasurer shall
+\begin{inlinealphalist}
+    \item maintain a bank or credit union account for \thedistrict{};
+    \item receive and disburse the funds of \thedistrict{};
+    \item maintain the financial records of \thedistrict{};
+    \item prepare and file applicable tax reports and returns;
+    \item propose an annual budget to the Executive Board and Membership;
+    \item provide periodic written financial reports to the Executive Board and Membership;
+    \item serve on the Events Committee;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair. Upon the election of a new Treasurer, the outgoing Treasurer and Chair.
+\end{inlinealphalist}
+
+The Deputy Treasurer shall:
+\begin{inlinealphalist}
+    \item assist the Treasurer in performing the above duties as the Treasurer and/or Chair assigns
+    \item with the Treasurer, co-chair the Treasury Committee
+    \item prepare and file tax reports if the Treasurer is unable to do so.
+\end{inlinealphalist}
+
+\subsection{}
+The Secretary shall
+\begin{inlinealphalist}
+    \item keep the minutes of all meetings and all records of \thedistrict{} except those assigned to other Officers;
+    \item serve on the Communications and Technology Committee;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair.
+\end{inlinealphalist}
+
+\subsection{}
+The State Committeewoman and State Committeeman shall
+\begin{inlinealphalist}
+    \item serve as a members of the WSDCC;
+    \item notify the appropriate KCDCC Delegates if s/he one or both cannot attend a meeting of the WSDCC;
+    \item report to the Executive Board and Membership regarding the activities, policies, and actions of the WSDCC;
+    \item serve on and actively participate in one of the Standing Committees;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair.
+\end{inlinealphalist}
+
+\subsection{}
+Each KCDCC Delegates shall
+\begin{inlinealphalist}
+    \item serve as a member the executive board of the KCDCC;
+    \item notify the KCDCC Alternate Delegates if they cannot attend a meeting of the KCDCC;
+    \item report to the Executive Board and Membership regarding the activities, policies, and actions of the KCDCC;
+    \item serve as the alternate state committee representatives;
+    \item serve on and actively participate in one of the Standing Committees;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair.
+\end{inlinealphalist}
+
+\subsection{}
+The Female and Male KCDCC Alternate Delegates shall
+\begin{inlinealphalist}
+    \item serve as alternate members of the executive board of the KCDCC;
+    \item notify the Chair if they cannot attend a meeting of the KCDCC;
+    \item serve on and actively participate in one of the Standing Committees;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair.
+\end{inlinealphalist}
+
+\subsection{}
+All Vice Chairs besides the First Vice Chair
+\begin{inlinealphalist}
+    \item chair and have chief responsibility for their respective Standing Committee;
+    \item report to the Executive Board and Membership regarding the activities of their respective Standing Committee;
+    \item serve on the Executive Board; and
+    \item perform such other duties as are assigned by the Chair.
+\end{inlinealphalist}
+
+These Vice Chair shall include
+Vice Chair for Elections
+Vice Chair for PCO Recruitment
+Vice Chair for Member Recruitment
+Vice Chair for Communications
+Vice Chair for Technology
+Vice Chair for Events
+Vice Chair for Meetings and Programs
+
+\section{Standing Committees}
+\subsection{}
+There shall be at least six (6) standing committees of the 43rd LD Democrats:
+\begin{inlinealphalist}
+    \item The Elections Committee;
+    \item the PCO Recruitment Committee;
+    \item The Membership Recruitment Committee
+    \item the Communications and Technology Committee
+    \item the Events Committee; and
+    \item the Programs and Meetings Committee. The Executive Board may establish other standing committees and corresponding delegated authority as necessary.
+\end{inlinealphalist}
+
+\subsection{}
+The Elections Committee shall
+\begin{inlinealphalist}
+    \item organize caucuses;
+    \item mobilize PCOs for get out the vote activities;
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Elections shall chair and have chief responsibility for the Elections Committee. The Elections Committee shall consist of Members appointed by the Vice Chair for Elections.
+\end{inlinealphalist}
+
+\subsection{}
+The PCO Recruitment Committee shall
+\begin{inlinealphalist}
+    \item maintain a list of PCOs and prospective PCOs;
+    \item recruit and retain PCOs;
+    \item organize and manage PCO recruitment efforts;
+    \item ensure prompt and correct processing of PCO appointments
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Recruitment shall chair and have chief responsibility for the Recruitment Committee.  The Recruitment Committee shall consist of Members appointed by the Vice Chair for PCO Recruitment.
+\end{inlinealphalist}
+
+\subsection{}
+The Membership Committee shall
+\begin{inlinealphalist}
+    \item recruit new members of the District
+    \item track volunteer interests of members and engage volunteers
+    \item Maintain a database of members (in conjunction with the Vice Chairs for Technology and PCO recruitment)
+    \item track attendance at District meetings and events
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Membership Recruitment shall chair and have chief responsibility for the Membership Committee. The Membership Committee shall consist of Members appointed by the Vice Chair for Membership.
+\end{inlinealphalist}
+
+\subsection{}
+The Communications and Technology Committee shall
+\begin{inlinealphalist}
+    \item publish any notices or information required by these bylaws;
+    \item prepare and distribute a periodic newsletter
+    \item maintain a web site;
+    \item maintain a member database with the Vice Chair for Recruitment;
+    \item conduct public relations activities; and
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Communications and the Vice Chair for Technology shall co-chair and have dual chief responsibility for the Communications and Technology Committee. The Communications and Technology Committee shall consist of the Secretary and Members appointed by the Vice Chairs for Communications and Technology.
+\end{inlinealphalist}
+
+\subsection{}
+The Events Committee shall
+\begin{inlinealphalist}
+    \item organize and manage at least two annual fundraising events;
+    \item organize and manage other non-meeting events of \thedistrict{}; and
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Events shall chair and have chief responsibility for the Events Committee. The Events Committee shall consist of the Treasurer and Members appointed by the Vice Chair for Events.
+\end{inlinealphalist}
+
+\subsection{}
+The Program and Meetings Committee shall
+\begin{inlinealphalist}
+    \item organize and develop programs for the Meetings;
+    \item coordinate functions of regular and special meetings of the district, such as sign-in and set-up;
+    \item monitor issues of interest to \thedistrict{}; and
+    \item perform such other duties as are assigned by the Chair. The Vice Chair for Programs shall chair and have chief responsibility for the Program Committee. The Program and Meetings Committee shall consist of Members appointed by the Vice Chair for Programs.
+\end{inlinealphalist}
+
+\subsection{}
+The treasury committee will
+\begin{inlinealphalist}
+    \item work with the Events, Membership and PCO Recruitment committees to ensure Chairs and members of those committees are educated in rules of accepting donations
+    \item coordinate with each group to provide appropriate support fundraising events and meetings
+    \item will provide tools such as credit card readers to be used at such events.
+\end{inlinealphalist}
+
+\section{Removal From Office}
+\subsection{}
+Upon petition for removal signed by at least one-third (1/3) of the Elected PCOs, \thedistrict{} shall consider the removal of the Chair. The Chair may be removed by a two-thirds (2/3) majority of the Elected PCOs present and voting at the Meeting, not counting abstentions.
+
+\subsection{}
+Upon petition for removal signed by at least one-third (1/3) of the Elected PCOs and Appointed PCOs, \thedistrict{} shall consider the removal of the Treasurer, State Committeewoman, State Committeewoman, Female KCDCC Delegate, or Male KCDCC Delegate, Female KCDCC Alternate Delegate, and Male KCDCC Alternate Delegate. Any of these Officers may be removed two-thirds (2/3) of the Elected and Appointed PCOs present and voting at the Meeting, not counting abstentions.
+
+\subsection{}
+Upon petition for removal signed by one-fourth (1/4) of the Members or a majority of the Executive Board, \thedistrict{} shall consider the removal of Vice Chair for Elections, Vice Chair for Recruitment, Vice Chair for Communications, Vice Chair for Technology, the Vice Chair for Events, Vice Chair for Programs, Secretary, Young Democrat Representative, LAC Representative, and Special Advisor to the Executive Board. Any of these Officers or members of the Executive Board may be removed by a two-thirds (2/3) majority of the Members present and voting at the Meeting, not counting abstentions.
+
+\subsection{}
+A petition for removal must be published at least ten (10) days before the Meeting at which the removal of an Officer or member of the Executive Board will be considered.
+
+\subsection{}
+In addition to removal under § 9.3, the Chair may remove the Young Democrat Representative at his or her discretion.
+
+\section{Vacancies}
+\subsection{}
+In the event of a vacancy in the office of the Chair, the First Vice Chair shall perform the duties of the Chair until the election of a new Chair. A new Chair shall be elected by the Elected and Appointed PCOs at a special election at the next Regular Meeting after adequate notice is published. Notice of the special election must be published at least ten (10) days before the Regular Meeting at which the special election will take place.
+
+\subsection{}
+Vacancies in Executive Board positions shall be filled by appointment of the Chair until a special election at the next Regular Meeting after adequate notice is provided. Notice of the special election must be published at least ten (10) days before the Regular Meeting at which the special election will take place.
+
+\subsection{}
+Vacancies in the positions of Young Democrat Representative, LAC Representative, and Special Advisor to the Executive Board shall be filled by appointment by the Chair subject to the approval by a majority of the Membership. Notice of the appointment must be published at least ten (10) days before the Regular Meeting at which the appointment will be considered by the Membership.
+
+\section{Resolutions}
+\subsection{}
+Members and Non-Voting Members may propose resolutions.
+
+\subsection{}
+Except as provided in §11.3, proposed resolutions must be submitted in writing, or electronically to the Chair and Secretary, at least fourteen (14) days before the Meeting at which the proposed resolution will be considered. Proposed resolutions must be published at least ten (10) days before the Meeting at which the proposed resolution will be considered.
+
+\subsection{}
+Proposed resolutions that are not timely submitted or published may nonetheless be considered at a meeting if
+\begin{inlinealphalist}
+    \item the proposed resolution is submitted in writing to the Chair before the scheduled start time of the Meeting;
+    \item the proponent supplies at least fifty (50) copies of the proposed resolution for distribution to Members at the Meeting; and
+    \item two-thirds (2/3) of the Members present vote to consider the resolution.
+\end{inlinealphalist}
+
+\subsection{}
+Resolutions must be approved by a majority of the Members present and voting at the Meeting, not counting abstentions, except that proposed resolutions considered under §11.3 must be approved by two-thirds (2/3) of the Members present and voting at the Meeting, not counting abstentions.
+
+\subsection{}
+Except for as provided in these bylaws, \thedistrict{} shall not consider resolutions that
+\begin{inlinealphalist}
+    \item endorse a candidate for elected office;
+    \item endorse a ballot issue position; or
+    \item censure an individual.
+\end{inlinealphalist}
+
+\section{Censure}
+\subsection{}
+Members may move that \thedistrict{} censure a Member; an officer or official of the national party, state party, KCDCC, or 43rd District; an elected official or candidate that \thedistrict{} has previously endorsed; or any other individual. A censure is an official public statement by the 43rd District condemning, reprimanding, or disapproving of specific conduct of an individual.
+
+\subsection{}
+Motions for censure must be submitted in writing, or electronically to the Chair and Secretary, at least twenty-one (21) days before the meeting at which the censure motion will be considered.
+
+\subsection{}
+The Executive Board may make reports and recommendations to the Membership regarding motions for censure.
+
+\subsection{}
+A motion for censure must be published at least ten (10) days before the Meeting at which it will be considered. In addition, the Chair or the Chair’s designee shall mail notice of the motion for censure to the subject at least ten (10) days before the Meeting at which the motion will be considered.
+
+\subsection{}
+Motions to censure must be approved by at least two-thirds (2/3) of the Members present and voting at the Meeting, not counting abstentions.
+
+\section{Endorsements}
+\subsection{}
+The 43rd District may endorse candidates for elected office and take positions on ballot measures.  Endorsements may be revoked using the same procedures used for making endorsements.
+
+\subsection{}
+The Executive Board shall propose, and the membership shall adopt, procedures for endorsing candidates and ballot measures. These procedures must be adopted and published at least fifteen (15) days before the meeting at which an endorsement will be considered. The procedures may require candidates to timely respond to a questionnaire as a prerequisite to endorsement.
+
+\subsection{}
+To be eligible for endorsement, a candidate must declare as a Democrat, except for candidates running for judicial positions.
+
+\subsection{}
+The Executive Board may make reports and recommendations to the Membership regarding endorsements, including note of a candidate’s contributions to \thedistrict{}.
+
+\subsection{}
+Notice that endorsements will be considered must be published at least ten (10) days before the Meeting at which endorsements will be considered.
+
+\subsection{}
+Endorsements must be approved by at least sixty percent (60\%) of the Members present and voting at the Meeting, not counting abstentions. More than one (1) candidate for the same office may be endorsed. In the event that more than one candidate is endorsed, \thedistrict{} may not make any monetary campaign contributions to any of the candidates for that office.
+
+\subsection{}
+The 43rd District may not endorse any candidate prior to the start of candidate filing or a ballot measure prior to filing approved ballot language unless
+\begin{inlinealphalist}
+    \item the Membership has adopted endorsement procedures pursuant to § 13.2;
+    \item notice is Published at least thirty (30) days prior to the Meeting at which early endorsements will be considered; and
+    \item the endorsement is approved by at least ninetenths (9/10) of the Members present and voting, not counting abstentions.
+\end{inlinealphalist}
+
+\section{Budget and Expenditures}
+\subsection{}
+No money shall be paid from the funds of \thedistrict{} except by bank or credit union account transaction through the Treasurer or the Chair. No Member other than the Treasurer or Chair may incur a debt or otherwise obligate \thedistrict{} for the future payment of funds without approval of the Treasurer, Chair, or Executive Board. In the case that either or both the Chair and Treasurer are incapacitated, the Vice-Chair or Deputy Treasurer will assume the duties of either the Chair or Treasurer respectively, with email notice to the Executive Board, within 24 hours of learning either the Chair or Treasurer is unable to preform their duties. Membership will be notified of these special circumstances within seven days.
+
+\subsection{}
+The Membership shall approve a budget. The budget must be adopted and may be amended by a majority of the Members present and voting at a Meeting, not counting abstentions. Notice that the adoption or amendment of the budget will be considered must be published at least ten (10) days before the Meeting at which action on the budget will be considered.
+
+\subsection{}
+The Chair, Treasurer, or Executive Board may authorize expenditures for budgeted items.
+
+\subsection{}
+The Executive Board may authorize non-budgeted expenditures of one hundred dollars (\$100.00) or less, except that the Executive Board, nor PCOs or Membership may not authorize any contributions to any candidate, ballot issue, or political committee, or any activity related to a Political Action Committee (PAC).
+
+\subsection{}
+Prior to passage of the budget, the Executive Board may authorize reasonable expenditures as necessary to maintain the district.
+
+\subsection{}
+Upon election of a new Treasurer, the outgoing Treasurer, along with the Deputy Treasurer (outgoing and incoming, if applicable) and Chair and Vice-Chair (outgoing and incoming, if applicable) shall formally transfer the treasury. This shall include a formal review of the financial books and transfer of control and access to all accounts used by \thedistrict{} Democrats (such as bank, merchant services, and other financial, as well as reporting databases). All shall sign a transfer document attesting to completeness of the records.
+
+\section{Miscellaneous Provisions}
+\subsection{}
+These bylaws shall become effective upon a majority vote of the Elected PCOs and Appointed PCOs present and voting at a Meeting, not counting abstentions.
+
+\subsection{}
+These bylaws may be amended if approved by two-thirds (2/3) of the Elected PCOs and Appointed PCOs present and voting at a Meeting, not counting abstentions. Notice of proposed amendments to the bylaws must be published at least ten (10) days before the Meeting at which the amendment of the bylaws will be considered.
+
+\subsection{}
+These bylaws may not be suspended for any purpose.
+
+\subsection{}
+State law, the charter and bylaws of the Democratic Party of the State of Washington, and the KCDCC bylaws shall govern in case of conflict with these bylaws.
+
+\subsection{}
+In the event of a nominating convention, \thedistrict{} shall comply with the bylaws of the Democratic Party of the State of Washington.
+
+\subsection{}
+The rules contained in the current edition of Robert’s Rules of Order Newly Revised shall govern the 43rd LD Democrats in all cases to which they are applicable and in which they are not inconsistent with these bylaws and any special rules of order \thedistrict{} may adopt.
+
+\subsection{}
+The records and membership list of \thedistrict{} shall be made available as provided in \thedistrict{}’s endorsement procedures or as required by law. The records and membership list shall not be used for any other purpose, unless approved by a majority of the Executive Board, with notice to the membership.
+
+\section{Definitions}
+\subsection{}
+For the purposes of these bylaws and unless otherwise indicated:
+\begin{alphalist}
+    \item “\nth{43} District” means \thedistrict{} Democratic Organization.
+    \item “Acting PCO” shall have the meaning set forth in § 3.3.
+    \item “Appointed PCO” shall have the meaning set forth in § 4.2.
+    \item “Chair” means the Chair of \thedistrict{} Democratic Organization.
+    \item “Chair Emeritus” means the former Chair who most recently served in that position.
+    \item “Communications and Technology Committee” means the committee described in § 8.5.
+    \item “County Chair” means the chair of the KCDCC.
+    \item “Elected PCO” shall have the meaning set forth in § 3.1.
+    \item “Election Committee” means the committee described in § 8.2.
+    \item “Executive Board” shall have the meaning set forth in § 6.1.
+    \item “Events Committee” means the committee described in § 8.6.
+    \item “KCDCC” means the King County Central Democratic Committee.
+    \item “Legislative District” means \theLD{}.
+    \item “Meeting” means a Regular Meeting, Special Meeting or Reorganization Meeting.
+    \item “Member” shall have the meaning set forth in § 2.1.
+    \item “Member Recruitment Committee” means the committee described in § 8.4
+    \item “Membership” means the Members assembled at a Meeting of \thedistrict{}.
+    \item “Non-voting Member” shall have the meaning set forth in § 2.2.
+    \item “Officer” means and includes the individuals described in § 6.2.
+    \item “PCO” means Precinct Committee OfficerThe term includes “Elected PCOs,” “Appointed PCOs” and “Acting PCOs.”
+    \item “PCO Recruitment Committee” means the committee described in § 8.3.
+    \item “Program and Meetings Committee” means the committee described in § 8.7.
+    \item “Publish” means to disseminate information or notice to members by U.SMail or email.  Information or notice is considered “published” when the communication is deposited in the U.S. Mail or sent by email.
+    \item “Recruitment Committee” means the committee described in § 9.3.
+    \item “Regular Meeting” shall have the meaning set forth in § 4.1.
+    \item “Reorganization Meeting” shall have the meaning set forth in § 4.3.
+    \item “Special Meeting” shall have the meaning set forth in § 4.2.
+    \item “Standing Committee” means and includes the committees set forth in § 8.1.
+    \item “WSDCC” means the Washington State Democratic Central Committee.
+    \item “Young Democrats Representative” means a member of any Young Democrats organization who resides in the Legislative District and is appointed by the Chair to serve on the Executive Board subject to the approval of a majority of the Membership.
+\end{alphalist}
+\end{document}
