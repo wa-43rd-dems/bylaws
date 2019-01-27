@@ -7,10 +7,14 @@ The bylaws are stored in two formats:
 1. `Bylaws.tex`: A text file containing the bylaws, represented using the [LaTeX typesetting system](https://www.latex-project.org/).
 2. `Bylaws.pdf`: A PDF file generated from `Bylaws.tex`.
 
-### Branches
+### Branches and Tags
 The [`master`](https://github.com/wa-43rd-dems/bylaws/tree/master) branch tracks the current rules and bylaws of the organization, as adopted and amended by the membership.
 
 The [`committee-recommendation`](https://github.com/wa-43rd-dems/bylaws/tree/committee-recommendation) branch tracks the changes currently recommended by the committee.
+
+When the membership adopts a new version of the bylaws, that version will be tagged with the date of adoption. For example:
+* [2018-01-16](https://github.com/wa-43rd-dems/bylaws/tree/2018-01-16): Bylaws as adopted on January 16, 2018
+* [2019-01-15](https://github.com/wa-43rd-dems/bylaws/tree/2019-01-15): Bylaws as adopted on January 15, 2019
 
 ### Workflow
 New branches should be created for each change proposed to and considered by the committee. These branches should track the `committee-recommendation` branch as their upstream, or another proposal branch if the new proposal is an amendment to an existing proposal.
