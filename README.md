@@ -43,6 +43,7 @@ You can follow our work directly by reading the [Rules and Bylaws Committee Goog
 The members of the Rules and Bylaws Committee as of January 26, 2019 are:
 * Annabelle Backman (Chair)
 * Brad Bell
+* Angyl Bender
 * Heidi Bennett
 * Aiden Carroll
 * Tara Gallagher
