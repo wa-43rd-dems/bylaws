@@ -1,0 +1,41 @@
+\usepackage{alphalph}
+\usepackage[inline]{enumitem}
+\usepackage[super]{nth}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Format article titles as "Article <number> - <name>", e.g., "Article 1 - Name"
+\titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection\enspace\textendash\enspace}{0em}{}
+
+% Format reference links to look like links in web pages
+\hypersetup{colorlinks=true, linkcolor=blue}
+
+% Rename "section" to "article" in references.
+\renewcommand*\sectionautorefname{article}
+
+% Rename "subsection" to "§" in references. We have to do some extra work to
+% remove a space so we get "§14.3" instead of "§ 14.3"
+\def\Snospace~{\S{}}
+\renewcommand*\subsectionautorefname{\Snospace}
+
+% Format subsection titles to be inline with the subsection text
+\titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+% Allow letter-enumerated lists to grow to (aa), (ab), ..., (az), (ba), (bb), ...
+\makeatletter
+\def\enumalphalphcnt#1{\expandafter\@enumalphalphcnt\csname c@#1\endcsname}
+\def\@enumalphalphcnt#1{\alphalph{#1}}
+\makeatother
+\AddEnumerateCounter{\enumalphalphcnt}{\@enumalphalphcnt}{aa}
+
+% Define inline and non-inline versions of letter-enumerated lists
+\newlist{inlinealphalist}{enumerate*}{1}
+\setlist[inlinealphalist]{label=(\alph*)}
+\newlist{alphalist}{enumerate}{1}
+\setlist[alphalist]{nosep, label=(\enumalphalphcnt*)}
+
+% Define convenient shorthand commands for commonly used terms that should be written consistently
+\newcommand{\fortythird}{\nth{43}}                              % \fortythird   = "43rd"
+\newcommand{\district}{\fortythird{} District}                  % \district     = "43rd District"
+\newcommand{\thedistrict}{the \district{}}                      % \thedistrict  = "the 43rd District"
+\newcommand{\theLD}{the \fortythird{} Legislative District}     % \theLD        = "the 43rd Legislative District"

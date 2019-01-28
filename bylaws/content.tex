@@ -1,34 +1,3 @@
-\documentclass{article}
-\usepackage{alphalph}
-\usepackage[inline]{enumitem}
-\usepackage[super]{nth}
-\usepackage{titlesec}
-
-\titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection\enspace\textendash\enspace}{0em}{}
-\titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection}{1em}{}
-
-\makeatletter
-\def\enumalphalphcnt#1{\expandafter\@enumalphalphcnt\csname c@#1\endcsname}
-\def\@enumalphalphcnt#1{\alphalph{#1}}
-\makeatother
-\AddEnumerateCounter{\enumalphalphcnt}{\@enumalphalphcnt}{aa}
-
-\newlist{inlinealphalist}{enumerate*}{1}
-\setlist[inlinealphalist]{label=(\alph*)}
-\newlist{alphalist}{enumerate}{1}
-\setlist[alphalist]{nosep, label=(\enumalphalphcnt*)}
-
-\newcommand{\fortythird}{\nth{43}}
-\newcommand{\district}{\fortythird{} District}
-\newcommand{\thedistrict}{the \district{}}
-\newcommand{\theLD}{the \fortythird{} Legislative District}
-
-\begin{document}
-\title{Bylaws of \thedistrict{} Democratic Organization}
-\date{(Last Amended January 15, 2019)}
-\maketitle
-
-\renewcommand{\abstractname}{Preamble}
 \begin{abstract}
 The purpose of \thedistrict{} Democratic Organization is to promote the Democratic Party and to increase participation by educating individuals about the principles, goals and candidates of the Democratic Party.
 \end{abstract}
@@ -38,7 +7,7 @@ The purpose of \thedistrict{} Democratic Organization is to promote the Democrat
 This organization shall be known as \thedistrict{} Democratic Organization.
 
 \section{Membership}
-\subsection{}
+\subsection{} \label{member}
 “Member” means and includes any individual who
 \begin{inlinealphalist}
     \item is a registered voter or, if under voting age, is eligible to become a registered voter within two years;
@@ -47,7 +16,7 @@ This organization shall be known as \thedistrict{} Democratic Organization.
     \item has paid applicable dues or is a PCO.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{non-voting-member}
 “Non-Voting Member” means any individual who
 \begin{inlinealphalist}
     \item declares themself to be a Democrat and
@@ -73,19 +42,19 @@ The effective date when an individual ceases to be a Member is the later of:
 \end{alphalist}
 
 \subsection{}
-Dues are payable annually. The amount of the annual dues shall be established by and may be amended by the Membership using the procedures applicable to the adoption and amendment of the budget in §14.2.
+Dues are payable annually. The amount of the annual dues shall be established by and may be amended by the Membership using the procedures applicable to the adoption and amendment of the budget in \autoref{budget-adoption}.
 
 \subsection{}
 Members shall not use any title of office or identify themselves as representing \thedistrict{} unless authorized by the Membership or the Executive Board.
 
 \section{Precinct Committee Officers}
-\subsection{}
+\subsection{} \label{elected-pco}
 “Elected PCO” means an individual who is elected to the office of Precinct Committee Officer pursuant to RCW 29A.80.041.
 
 \subsection{}
 “Appointed PCO” means an individual who is appointed to the office of Precinct Committee Officer pursuant to RCW 29A.28.071. Except as otherwise provided in these bylaws, Appointed PCOs have the same rights and responsibilities as Elected PCOs.
 
-\subsection{}
+\subsection{} \label{acting-pco}
 “Acting PCO” means an individual who is appointed by the County Chair to serve as PCO in a precinct
 \begin{inlinealphalist}
     \item that does not have an Elected PCO or an Appointed PCO, and
@@ -111,13 +80,13 @@ A precinct is deemed vacant if the Elected PCO or Appointed PCO
 \end{inlinealphalist}
 
 \section{Meetings}
-\subsection{}
+\subsection{} \label{regular-meeting}
 “Regular Meeting” means a regularly scheduled meeting of \thedistrict{}. The time and date for a Regular Meeting may be altered by the Membership or the Executive Board. Notice of any change in the time or date of a Regular Meeting must be published at least thirty (30) days before the new meeting date.
 
-\subsection{}
+\subsection{} \label{special-meeting}
 “Special Meeting” means a Meeting other than a Regular Meeting or a Reorganization Meeting. A Special Meeting may be called by one-fourth (1/4) of the members, one-third (1/3) of the PCOs, or a majority of the Executive Board. Notice of a Special Meeting must be published at least thirty (30) days before the meeting date.
 
-\subsection{}
+\subsection{} \label{reorg-meeting}
 “Reorganization Meeting” means a meeting called by the County Chair for the purpose of reorganizing \thedistrict{}
 \begin{inlinealphalist}
     \item in January of odd-numbered years, or
@@ -139,11 +108,12 @@ Executive Board members, except for the Young Democrats Representative, Chair Em
 
 \subsection{}
 The Young Democrats Representative shall be appointed by the Chair subject to the approval of a majority of Members present and voting at a Meeting, not counting abstentions.
+
 \section{Officers and Executive Board}
-\subsection{}
+\subsection{} \label{exec-board}
 The Executive Board of \thedistrict{} shall consist of the Chair, First Vice Chair, Treasurer, Vice Chair for Elections, Vice Chair for PCO Recruitment, Vice Chair for Membership, Vice Chair for Communications, Vice Chair for Technology, Vice Chair for Events, Vice Chair for Programs and Meetings, Secretary, State Committeewoman, State Committeeman, Female KCDCC Delegate, Male KCDCC Delegate, Female KCDCC Alternate, Male KCDCC Alternate, and Young Democrats Representative.
 
-\subsection{}
+\subsection{} \label{officers}
 The Officers of \thedistrict{} Democrats shall be the Chair Emeritus and Treasurer Emeritus (Emeritus position are advisory and do not have an Executive Board vote), any member of \thedistrict{} Democrats who serves as an officer on the Executive Board of the Washington State Democratic Central Committee, and other appointed officers as the Chair deems necessary. All Officers appointed by the Chair shall be subject to approval by majority vote of present members at a General Membership meeting. Positions not specified in the bylaws expire at the next reorganization meeting.
 
 \subsection{}
@@ -269,7 +239,7 @@ Vice Chair for Events
 Vice Chair for Meetings and Programs
 
 \section{Standing Committees}
-\subsection{}
+\subsection{} \label{standing-committee-list}
 There shall be at least six (6) standing committees of the 43rd LD Democrats:
 \begin{inlinealphalist}
     \item The Elections Committee;
@@ -280,7 +250,7 @@ There shall be at least six (6) standing committees of the 43rd LD Democrats:
     \item the Programs and Meetings Committee. The Executive Board may establish other standing committees and corresponding delegated authority as necessary.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{elections-committee}
 The Elections Committee shall
 \begin{inlinealphalist}
     \item organize caucuses;
@@ -288,7 +258,7 @@ The Elections Committee shall
     \item perform such other duties as are assigned by the Chair. The Vice Chair for Elections shall chair and have chief responsibility for the Elections Committee. The Elections Committee shall consist of Members appointed by the Vice Chair for Elections.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{pco-recruitment-committee}
 The PCO Recruitment Committee shall
 \begin{inlinealphalist}
     \item maintain a list of PCOs and prospective PCOs;
@@ -298,7 +268,7 @@ The PCO Recruitment Committee shall
     \item perform such other duties as are assigned by the Chair. The Vice Chair for Recruitment shall chair and have chief responsibility for the Recruitment Committee.  The Recruitment Committee shall consist of Members appointed by the Vice Chair for PCO Recruitment.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{membership-committee}
 The Membership Committee shall
 \begin{inlinealphalist}
     \item recruit new members of the District
@@ -308,7 +278,7 @@ The Membership Committee shall
     \item perform such other duties as are assigned by the Chair. The Vice Chair for Membership Recruitment shall chair and have chief responsibility for the Membership Committee. The Membership Committee shall consist of Members appointed by the Vice Chair for Membership.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{comms-tech-committee}
 The Communications and Technology Committee shall
 \begin{inlinealphalist}
     \item publish any notices or information required by these bylaws;
@@ -319,7 +289,7 @@ The Communications and Technology Committee shall
     \item perform such other duties as are assigned by the Chair. The Vice Chair for Communications and the Vice Chair for Technology shall co-chair and have dual chief responsibility for the Communications and Technology Committee. The Communications and Technology Committee shall consist of the Secretary and Members appointed by the Vice Chairs for Communications and Technology.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{events-committee}
 The Events Committee shall
 \begin{inlinealphalist}
     \item organize and manage at least two annual fundraising events;
@@ -327,7 +297,7 @@ The Events Committee shall
     \item perform such other duties as are assigned by the Chair. The Vice Chair for Events shall chair and have chief responsibility for the Events Committee. The Events Committee shall consist of the Treasurer and Members appointed by the Vice Chair for Events.
 \end{inlinealphalist}
 
-\subsection{}
+\subsection{} \label{meetings-committee}
 The Program and Meetings Committee shall
 \begin{inlinealphalist}
     \item organize and develop programs for the Meetings;
@@ -351,14 +321,14 @@ Upon petition for removal signed by at least one-third (1/3) of the Elected PCOs
 \subsection{}
 Upon petition for removal signed by at least one-third (1/3) of the Elected PCOs and Appointed PCOs, \thedistrict{} shall consider the removal of the Treasurer, State Committeewoman, State Committeewoman, Female KCDCC Delegate, or Male KCDCC Delegate, Female KCDCC Alternate Delegate, and Male KCDCC Alternate Delegate. Any of these Officers may be removed two-thirds (2/3) of the Elected and Appointed PCOs present and voting at the Meeting, not counting abstentions.
 
-\subsection{}
+\subsection{} \label{eb-removal}
 Upon petition for removal signed by one-fourth (1/4) of the Members or a majority of the Executive Board, \thedistrict{} shall consider the removal of Vice Chair for Elections, Vice Chair for Recruitment, Vice Chair for Communications, Vice Chair for Technology, the Vice Chair for Events, Vice Chair for Programs, Secretary, Young Democrat Representative, LAC Representative, and Special Advisor to the Executive Board. Any of these Officers or members of the Executive Board may be removed by a two-thirds (2/3) majority of the Members present and voting at the Meeting, not counting abstentions.
 
 \subsection{}
 A petition for removal must be published at least ten (10) days before the Meeting at which the removal of an Officer or member of the Executive Board will be considered.
 
 \subsection{}
-In addition to removal under § 9.3, the Chair may remove the Young Democrat Representative at his or her discretion.
+In addition to removal under \autoref{eb-removal}, the Chair may remove the Young Democrat Representative at his or her discretion.
 
 \section{Vacancies}
 \subsection{}
@@ -375,9 +345,9 @@ Vacancies in the positions of Young Democrat Representative, LAC Representative,
 Members and Non-Voting Members may propose resolutions.
 
 \subsection{}
-Except as provided in §11.3, proposed resolutions must be submitted in writing, or electronically to the Chair and Secretary, at least fourteen (14) days before the Meeting at which the proposed resolution will be considered. Proposed resolutions must be published at least ten (10) days before the Meeting at which the proposed resolution will be considered.
+Except as provided in \autoref{unpublished-resolutions}, proposed resolutions must be submitted in writing, or electronically to the Chair and Secretary, at least fourteen (14) days before the Meeting at which the proposed resolution will be considered. Proposed resolutions must be published at least ten (10) days before the Meeting at which the proposed resolution will be considered.
 
-\subsection{}
+\subsection{} \label{unpublished-resolutions}
 Proposed resolutions that are not timely submitted or published may nonetheless be considered at a meeting if
 \begin{inlinealphalist}
     \item the proposed resolution is submitted in writing to the Chair before the scheduled start time of the Meeting;
@@ -386,7 +356,7 @@ Proposed resolutions that are not timely submitted or published may nonetheless 
 \end{inlinealphalist}
 
 \subsection{}
-Resolutions must be approved by a majority of the Members present and voting at the Meeting, not counting abstentions, except that proposed resolutions considered under §11.3 must be approved by two-thirds (2/3) of the Members present and voting at the Meeting, not counting abstentions.
+Resolutions must be approved by a majority of the Members present and voting at the Meeting, not counting abstentions, except that proposed resolutions considered under \autoref{unpublished-resolutions} must be approved by two-thirds (2/3) of the Members present and voting at the Meeting, not counting abstentions.
 
 \subsection{}
 Except for as provided in these bylaws, \thedistrict{} shall not consider resolutions that
@@ -416,7 +386,7 @@ Motions to censure must be approved by at least two-thirds (2/3) of the Members 
 \subsection{}
 The 43rd District may endorse candidates for elected office and take positions on ballot measures.  Endorsements may be revoked using the same procedures used for making endorsements.
 
-\subsection{}
+\subsection{} \label{endorsement-procedures}
 The Executive Board shall propose, and the membership shall adopt, procedures for endorsing candidates and ballot measures. These procedures must be adopted and published at least fifteen (15) days before the meeting at which an endorsement will be considered. The procedures may require candidates to timely respond to a questionnaire as a prerequisite to endorsement.
 
 \subsection{}
@@ -434,7 +404,7 @@ Endorsements must be approved by at least sixty percent (60\%) of the Members pr
 \subsection{}
 The 43rd District may not endorse any candidate prior to the start of candidate filing or a ballot measure prior to filing approved ballot language unless
 \begin{inlinealphalist}
-    \item the Membership has adopted endorsement procedures pursuant to § 13.2;
+    \item the Membership has adopted endorsement procedures pursuant to \autoref{endorsement-procedures};
     \item notice is Published at least thirty (30) days prior to the Meeting at which early endorsements will be considered; and
     \item the endorsement is approved by at least ninetenths (9/10) of the Members present and voting, not counting abstentions.
 \end{inlinealphalist}
@@ -443,7 +413,7 @@ The 43rd District may not endorse any candidate prior to the start of candidate 
 \subsection{}
 No money shall be paid from the funds of \thedistrict{} except by bank or credit union account transaction through the Treasurer or the Chair. No Member other than the Treasurer or Chair may incur a debt or otherwise obligate \thedistrict{} for the future payment of funds without approval of the Treasurer, Chair, or Executive Board. In the case that either or both the Chair and Treasurer are incapacitated, the Vice-Chair or Deputy Treasurer will assume the duties of either the Chair or Treasurer respectively, with email notice to the Executive Board, within 24 hours of learning either the Chair or Treasurer is unable to preform their duties. Membership will be notified of these special circumstances within seven days.
 
-\subsection{}
+\subsection{}\label{budget-adoption}
 The Membership shall approve a budget. The budget must be adopted and may be amended by a majority of the Members present and voting at a Meeting, not counting abstentions. Notice that the adoption or amendment of the budget will be considered must be published at least ten (10) days before the Meeting at which action on the budget will be considered.
 
 \subsection{}
@@ -485,38 +455,38 @@ The rules contained in the current edition of Robert’s Rules of Order Newly Re
 \subsection{}
 The records and membership list of \thedistrict{} shall be made available as provided in \thedistrict{}’s endorsement procedures or as required by law. The records and membership list shall not be used for any other purpose, unless approved by a majority of the Executive Board, with notice to the membership.
 
-\section{Definitions}
+\section{Definitions} \label{defs}
 \subsection{}
 For the purposes of these bylaws and unless otherwise indicated:
 \begin{alphalist}
     \item “\nth{43} District” means \thedistrict{} Democratic Organization.
-    \item “Acting PCO” shall have the meaning set forth in § 3.3.
-    \item “Appointed PCO” shall have the meaning set forth in § 4.2.
+    \item “Acting PCO” shall have the meaning set forth in \autoref{acting-pco}.
+    \item “Appointed PCO” shall have the meaning set forth in \S 4.2.
     \item “Chair” means the Chair of \thedistrict{} Democratic Organization.
     \item “Chair Emeritus” means the former Chair who most recently served in that position.
-    \item “Communications and Technology Committee” means the committee described in § 8.5.
+    \item “Communications and Technology Committee” means the committee described in \autoref{comms-tech-committee}.
     \item “County Chair” means the chair of the KCDCC.
-    \item “Elected PCO” shall have the meaning set forth in § 3.1.
-    \item “Election Committee” means the committee described in § 8.2.
-    \item “Executive Board” shall have the meaning set forth in § 6.1.
-    \item “Events Committee” means the committee described in § 8.6.
+    \item “Elected PCO” shall have the meaning set forth in \autoref{elected-pco}.
+    \item “Election Committee” means the committee described in \autoref{elections-committee}.
+    \item “Executive Board” shall have the meaning set forth in \autoref{exec-board}.
+    \item “Events Committee” means the committee described in \autoref{events-committee}.
     \item “KCDCC” means the King County Central Democratic Committee.
     \item “Legislative District” means \theLD{}.
     \item “Meeting” means a Regular Meeting, Special Meeting or Reorganization Meeting.
-    \item “Member” shall have the meaning set forth in § 2.1.
-    \item “Member Recruitment Committee” means the committee described in § 8.4
+    \item “Member” shall have the meaning set forth in \autoref{member}.
+    \item “Member Recruitment Committee” means the committee described in \autoref{membership-committee}
     \item “Membership” means the Members assembled at a Meeting of \thedistrict{}.
-    \item “Non-voting Member” shall have the meaning set forth in § 2.2.
-    \item “Officer” means and includes the individuals described in § 6.2.
+    \item “Non-voting Member” shall have the meaning set forth in \autoref{non-voting-member}.
+    \item “Officer” means and includes the individuals described in \autoref{officers}.
     \item “PCO” means Precinct Committee OfficerThe term includes “Elected PCOs,” “Appointed PCOs” and “Acting PCOs.”
-    \item “PCO Recruitment Committee” means the committee described in § 8.3.
-    \item “Program and Meetings Committee” means the committee described in § 8.7.
+    \item “PCO Recruitment Committee” means the committee described in \autoref{pco-recruitment-committee}.
+    \item “Program and Meetings Committee” means the committee described in \autoref{meetings-committee}.
     \item “Publish” means to disseminate information or notice to members by U.SMail or email.  Information or notice is considered “published” when the communication is deposited in the U.S. Mail or sent by email.
     \item “Recruitment Committee” means the committee described in § 9.3.
-    \item “Regular Meeting” shall have the meaning set forth in § 4.1.
-    \item “Reorganization Meeting” shall have the meaning set forth in § 4.3.
-    \item “Special Meeting” shall have the meaning set forth in § 4.2.
-    \item “Standing Committee” means and includes the committees set forth in § 8.1.
+    \item “Regular Meeting” shall have the meaning set forth in \autoref{regular-meeting}.
+    \item “Reorganization Meeting” shall have the meaning set forth in \autoref{reorg-meeting}.
+    \item “Special Meeting” shall have the meaning set forth in \autoref{special-meeting}.
+    \item “Standing Committee” means and includes the committees set forth in \autoref{standing-committee-list}.
     \item “WSDCC” means the Washington State Democratic Central Committee.
     \item “Young Democrats Representative” means a member of any Young Democrats organization who resides in the Legislative District and is appointed by the Chair to serve on the Executive Board subject to the approval of a majority of the Membership.
 \end{alphalist}
