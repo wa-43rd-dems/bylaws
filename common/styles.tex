@@ -17,9 +17,11 @@
 % remove a space so we get "§14.3" instead of "§ 14.3"
 \def\Snospace~{\S{}}
 \renewcommand*\subsectionautorefname{\Snospace}
+\renewcommand*\subsubsectionautorefname{\Snospace}
 
 % Format subsection titles to be inline with the subsection text
 \titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsubsection}{1em}{}
 
 % Allow letter-enumerated lists to grow to (aa), (ab), ..., (az), (ba), (bb), ...
 \makeatletter
