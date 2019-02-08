@@ -3,6 +3,17 @@
 \usepackage[super]{nth}
 \usepackage{titlesec}
 \usepackage{hyperref}
+\usepackage{ifthen}
+
+% If the annotation commands aren't defined, define them to hide annotation markup.
+\providecommand{\strike}[1]{}
+\providecommand{\add}[1]{#1}
+\providecommand{\rationale}[2]{#2}
+
+% Convenience command for text replacements.
+\newcommand{\edit}[3][]{%
+    \strike{#2}\add{#3}%
+    \ifthenelse{\equal{#1}{}}{}{\rationale{Line \thelinenumber}{#1}}}
 
 % Format article titles as "Article <number> - <name>", e.g., "Article 1 - Name"
 \titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection\enspace\textendash\enspace}{0em}{}
@@ -35,4 +46,4 @@
 \setlist[alphalist]{nosep, label=(\enumalphalphcnt*)}
 
 % Define convenient shorthand commands for commonly used terms that should be written consistently
-\newcommand{\fortythird}{\nth{43}}                              % \fortythird   = "43rd"
+\newcommand{\fortythird}{\nth{43}}                     % \fortythird{}  = "43rd"

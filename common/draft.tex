@@ -1,0 +1,24 @@
+\usepackage{tcolorbox}
+\usepackage{lineno}
+\usepackage{geometry}
+\usepackage[normalem]{ulem}
+
+% Shrink margins and shift content to make room for info boxes in the right-hand margin.
+\geometry{left=1in,right=2in,marginparwidth=1.5in,marginparsep=0.25in}
+
+% Print line numbers to help us refer to specific edits.
+\linenumbers
+
+% Define macros for annotations.
+\newcommand{\strike}[2][]{\textcolor{red!75!black}{\sout{#2}}}
+\newcommand{\add}[2][]{\textcolor{blue!75!black}{\uline{#2}}}
+
+% Margin notes
+\newcommand{\rationale}[2]{%
+    \marginpar{%
+        \begin{tcolorbox}[left=0in,right=0in,top=0in,bottom=0in,colback=yellow!5!white,colframe=green!50!black,title=#1]
+            \begin{flushleft}
+                \footnotesize{#2}
+            \end{flushleft}
+        \end{tcolorbox}}}
+
