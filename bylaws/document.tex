@@ -13,9 +13,12 @@
 
 % Table of contents (just listing articles, no subsections)
 \setcounter{tocdepth}{1}
+\pagenumbering{roman}
 \tableofcontents
 
 % Document content
+\newpage{}
+\pagenumbering{arabic}
 \input{content.tex}
 
 \end{document}
